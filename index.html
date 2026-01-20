@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinco Ranch Community Hub</title>
+    <meta name="description" content="A comprehensive resource hub for Cinco Ranch residents, featuring local services, parks, and events.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">Cinco<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#highlights">Highlights</a></li>
+                    <li><a href="#directory">Directory</a></li>
+                    <li><a href="#contribute" class="btn-primary">Add Resource</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg" style="background-image: url('images/hero.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Cinco Ranch<br>Community Experience</h1>
+            <p class="fade-in delay-1">Discover, connect, and engage with the best resources available to our residents.</p>
+            <div class="hero-actions fade-in delay-2">
+                <a href="#directory" class="btn-outline">Explore Directory</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community Spotlights</h2>
+                <p>Curated selections for this month</p>
+            </div>
+            <div class="spotlight-grid" id="spotlight-container">
+                <!-- Javascript will populate this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Directory Section -->
+    <section id="directory">
+        <div class="container">
+            <div class="section-header">
+                <h2>Resource Directory</h2>
+                <p>Find exactly what you need</p>
+            </div>
+
+            <div class="directory-controls">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="search-input" placeholder="Search for parks, services, events...">
+                </div>
+                <div class="filter-pills" id="filter-container">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <!-- JS will populate categories -->
+                </div>
+            </div>
+
+            <div class="resource-grid" id="resource-container">
+                <!-- Javascript will populate this -->
+            </div>
+            
+            <div class="no-results hidden" id="no-results">
+                <p>No resources found matching your search.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contribution Section -->
+    <section id="contribute">
+        <div class="container narrow">
+            <div class="form-card">
+                <div class="form-header">
+                    <h2>Add to the Hub</h2>
+                    <p>Know a great local resource? Share it with the community.</p>
+                </div>
+                <form id="add-resource-form">
+                    <div class="form-group">
+                        <label for="res-name">Resource Name</label>
+                        <input type="text" id="res-name" required placeholder="e.g. Cinco Ranch Library">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-category">Category</label>
+                            <select id="res-category" required>
+                                <option value="" disabled selected>Select a type</option>
+                                <option value="Services">Services</option>
+                                <option value="Parks">Parks</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Amenities">Amenities</option>
+                                <option value="Emergency Services">Emergency Services</option>
+                                <option value="Events">Events</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-location">Location/Address</label>
+                            <input type="text" id="res-location" placeholder="e.g. 2620 Commercial Center Blvd">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="res-desc">Description</label>
+                        <textarea id="res-desc" rows="4" placeholder="Briefly describe the services or offerings..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width">Submit Resource</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Cinco<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#directory">Directory</a></li>
+                        <li><a href="#contribute">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Cinco Ranch Community Hub. All rights reserved.</p>
+                    <p class="disclaimer">Not officially affiliated with Cinco Ranch Residential Association II. Educational Project.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
