@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Brookhaven Community Hub</title>
+    <meta name="description" content="Visual highlights of life in Brookhaven.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 1rem;
+            background: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">Brookhaven<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html" class="active" style="color: var(--color-accent);">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-mini">
+        <div class="hero-bg"
+            style="background: linear-gradient(rgba(26, 60, 52, 0.6), rgba(26, 60, 52, 0.9)), url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&q=80');">
+        </div>
+        <div class="hero-content">
+            <h1>Photo Gallery</h1>
+            <p>Capturing the beauty and spirit of our neighborhood.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-wrapper" style="padding: 4rem 0;">
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80"
+                            alt="Pool">
+                        <div class="gallery-caption">Summer at the Beach Club</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&q=80"
+                            alt="Park">
+                        <div class="gallery-caption">Sunset on the Trails</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80"
+                            alt="Community Event">
+                        <div class="gallery-caption">Annual Holiday Festival</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&q=80"
+                            alt="Tennis">
+                        <div class="gallery-caption">Charity Tennis Tournament</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1661893427047-16f6ddc173f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2F5YWt8ZW58MHx8MHx8fDA%3D"
+                            alt="Lake">
+                        <div class="gallery-caption">Morning Kayak Ride</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1647598616197-dc7b27531e3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHNwcmluZyUyMGZsb3JhfGVufDB8fDB8fHww"
+                            alt="Nature">
+                        <div class="gallery-caption">Spring Flora</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="community-directory.html">Directory</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="index.html#contribute">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

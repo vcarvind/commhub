@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Improvement - Brookhaven Community Hub</title>
+    <meta name="description" content="Guidelines and forms for architectural modifications and home improvements.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dark Theme Styles */
+        body {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        li,
+        span,
+        strong,
+        em {
+            color: white;
+        }
+
+        /* Header Override */
+        #header {
+            background-color: rgba(26, 60, 52, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo,
+        #header nav a {
+            color: white;
+        }
+
+        /* Dropdown Override */
+        .dropdown-menu {
+            background-color: #224a40;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a {
+            color: white !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--color-accent) !important;
+        }
+
+        /* Dark Alert Box */
+        .alert {
+            background: rgba(255, 255, 255, 0.05) !important;
+            color: white !important;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--color-accent) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">Brookhaven<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html" class="active" style="color: var(--color-accent);">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-mini">
+        <div class="hero-bg"
+            style="background: linear-gradient(rgba(26, 60, 52, 0.6), rgba(26, 60, 52, 0.9)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80');">
+        </div>
+        <div class="hero-content">
+            <h1>Home Improvement</h1>
+            <p>Building a better community, one home at a time.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-wrapper" style="max-width: 800px; margin: 0 auto; padding: 4rem 0;">
+                <h2>Architectural Review</h2>
+                <div class="alert"
+                    style="background: rgba(255, 255, 255, 0.05); color: white; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; border-left: 4px solid var(--color-accent);">
+                    <strong>Important!</strong> Any exterior modification to your home or property must be approved by
+                    the Architectural Review Committee (ARC) <em>before</em> work begins.
+                </div>
+
+                <p>To maintain the aesthetic standards and property values of Brookhaven, all exterior changes including
+                    painting, roofing, landscaping, fencing, and pool installations require prior approval.</p>
+
+                <h3>Application Process</h3>
+                <ol style="margin-left: 1.5rem; margin-bottom: 2rem;">
+                    <li style="margin-bottom: 1rem;"><strong>Download the Application:</strong> Obtain the current Home
+                        Improvement Application form below.</li>
+                    <li style="margin-bottom: 1rem;"><strong>Gather Documents:</strong> Include a property survey,
+                        samples of materials (paint chips, roofing shingles), and detailed plans/drawings.</li>
+                    <li style="margin-bottom: 1rem;"><strong>Submit:</strong> Email your complete package to the Reviews
+                        Department or drop it off at the Association Office.</li>
+                    <li><strong>Review:</strong> The committee typically reviews applications twice a month. You will be
+                        notified of the decision via mail/email.</li>
+                </ol>
+
+                <h3>Common Projects</h3>
+                <ul style="list-style: disc; margin-left: 1.5rem;">
+                    <li>Patio Covers & Gazebos</li>
+                    <li>Storage Sheds</li>
+                    <li>Exterior Painting</li>
+                    <li>Solar Panels</li>
+                    <li>Window Replacement</li>
+                </ul>
+
+                <button class="btn-primary" style="margin-top: 2rem;">Download Modification Application</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="community-directory.html">Directory</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="index.html#contribute">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

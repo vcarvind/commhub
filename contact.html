@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Brookhaven Community Hub</title>
+    <meta name="description" content="Get in touch with the Brookhaven Community Association.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dark Theme Styles */
+        body {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        li,
+        span,
+        strong,
+        label {
+            color: white;
+        }
+
+        /* Header Override */
+        #header {
+            background-color: rgba(26, 60, 52, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo,
+        #header nav a {
+            color: white;
+        }
+
+        /* Dropdown Override */
+        .dropdown-menu {
+            background-color: #224a40;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a {
+            color: white !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--color-accent) !important;
+        }
+
+        /* Form Override */
+        .form-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        input,
+        select,
+        textarea {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: var(--color-accent);
+            color: white;
+        }
+
+        ::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">Brookhaven<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="active" style="color: var(--color-accent);">Contact Us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-mini">
+        <div class="hero-bg"
+            style="background: linear-gradient(rgba(26, 60, 52, 0.6), rgba(26, 60, 52, 0.9)), url('https://images.unsplash.com/photo-1423666639041-f14d7045365c?auto=format&fit=crop&q=80');">
+        </div>
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We are here to help. Reach out with any questions or concerns.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-wrapper" style="max-width: 800px; margin: 0 auto; padding: 4rem 0;">
+
+                <div class="form-card">
+                    <div class="form-header">
+                        <h2>Send us a Message</h2>
+                        <p>Fill out the form below and we will get back to you as soon as possible.</p>
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option>General Inquiry</option>
+                                <option>HOA Question</option>
+                                <option>Facility Reservation</option>
+                                <option>Maintenance Report</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we assist you?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary full-width">Send Message</button>
+                    </form>
+                </div>
+
+                <div style="margin-top: 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <h3>Association Office</h3>
+                        <p style="margin-bottom: 0.5rem;"><strong>Address:</strong><br>
+                            123 Community Blvd,<br>Brookhaven, TX 77000</p>
+                        <p><strong>Phone:</strong> (555) 123-4567</p>
+                        <p><strong>Email:</strong> office@brookhavenhub.com</p>
+                    </div>
+                    <div>
+                        <h3>Office Hours</h3>
+                        <p style="margin-bottom: 0.5rem;"><strong>Monday - Friday:</strong><br>
+                            9:00 AM - 5:00 PM</p>
+                        <p><strong>Saturday:</strong><br>
+                            10:00 AM - 2:00 PM</p>
+                        <p><strong>Sunday:</strong> Closed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="community-directory.html">Directory</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

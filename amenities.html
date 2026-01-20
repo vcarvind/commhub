@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenities - Brookhaven Community Hub</title>
+    <meta name="description" content="Explore top-tier amenities at Brookhaven: Pools, Parks, Tennis Courts, and more.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-mini {
+            height: 50vh;
+            min-height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">Brookhaven<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html" class="active" style="color: var(--color-accent);">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-mini">
+        <div class="hero-bg"
+            style="background: linear-gradient(rgba(26, 60, 52, 0.6), rgba(26, 60, 52, 0.9)), url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?q=80&w=2070&auto=format&fit=crop');">
+        </div>
+        <div class="hero-content">
+            <h1 class="fade-in">World-Class Amenities</h1>
+            <p class="fade-in delay-1">Recreation and relaxation, right at your doorstep.</p>
+        </div>
+    </section>
+
+    <!-- Amenities Grid -->
+    <section id="amenities-list">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Our Facilities</h2>
+                <p>Designed for active lifestyles and community connection</p>
+            </div>
+
+            <div class="resource-grid">
+                <!-- Pools -->
+                <div class="card">
+                    <div class="card-header"
+                        style="background-image: url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80'); background-size: cover;">
+                        <span class="card-tag">Recreation</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Community Pools</h3>
+                        <p>Relax and cool off in our resort-style pools. Featuring lap lanes, splash pads for kids, and
+                            shaded lounging areas.</p>
+                        <div class="card-meta">
+                            <span>Open 6 AM - 10 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tennis/Pickleball -->
+                <div class="card">
+                    <div class="card-header"
+                        style="background-image: url('https://images.unsplash.com/photo-1622279457459-39122a7860c5?auto=format&fit=crop&q=80'); background-size: cover;">
+                        <span class="card-tag">Sports</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Tennis & Pickleball</h3>
+                        <p>Multiple lighted courts available for reservation. Join our active leagues or enjoy a casual
+                            match with neighbors.</p>
+                        <div class="card-meta">
+                            <span>Reservations Required</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parks -->
+                <div class="card">
+                    <div class="card-header"
+                        style="background-image: url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&q=80'); background-size: cover;">
+                        <span class="card-tag">Outdoors</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Parks & Trails</h3>
+                        <p>Miles of scenic walking and biking trails connecting our neighborhoods, plus large green
+                            spaces for picnics.</p>
+                        <div class="card-meta">
+                            <span>Open Sunrise to Sunset</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boat Docks -->
+                <div class="card">
+                    <div class="card-header"
+                        style="background-image: url('https://images.unsplash.com/photo-1564182842519-8a3b2af3e228?auto=format&fit=crop&q=80'); background-size: cover;">
+                        <span class="card-tag">Water Activities</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Boat Docks</h3>
+                        <p>Launch paddle boats and kayaks from our community docks. Enjoy a peaceful afternoon on the
+                            water.</p>
+                        <div class="card-meta">
+                            <span>Beach Club Access</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Playgrounds -->
+                <div class="card">
+                    <div class="card-header"
+                        style="background-image: url('https://images.unsplash.com/photo-1557053503-0c252e7c393b?auto=format&fit=crop&q=80'); background-size: cover;">
+                        <span class="card-tag">Family</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Neighborhood Playgrounds</h3>
+                        <p>Safe and modern play structures located throughout the community, perfect for children of all
+                            ages.</p>
+                        <div class="card-meta">
+                            <span>Multiple Locations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pavilions -->
+                <div class="card">
+                    <div class="card-header"
+                        style="background-image: url('https://images.unsplash.com/photo-1510526569123-559d8196f790?auto=format&fit=crop&q=80'); background-size: cover;">
+                        <span class="card-tag">Gathering</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Pavilions & Grills</h3>
+                        <p>Host your next family reunion or birthday party at our covered open-air pavilions equipped
+                            with BBQ grills.</p>
+                        <div class="card-meta">
+                            <span>First-come, First-served</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#directory">Directory</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="index.html#contribute">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

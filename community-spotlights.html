@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Spotlights - Brookhaven Community Hub</title>
+    <meta name="description" content="Highlighting the people and places that make Brookhaven special.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dark Theme Override for Spotlights Page */
+        body {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        li,
+        span,
+        a {
+            color: white;
+        }
+
+        /* Override header to match dark theme so white text is readable */
+        #header {
+            background-color: rgba(26, 60, 52, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo,
+        #header nav a {
+            color: white;
+        }
+
+        /* Dropdowns */
+        .dropdown-menu {
+            background-color: #224a40;
+            /* Slightly lighter than primary */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a {
+            color: white !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--color-accent) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">Brookhaven<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory" class="active" style="color: var(--color-accent);">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-mini">
+        <div class="hero-bg"
+            style="background: linear-gradient(rgba(26, 60, 52, 0.6), rgba(26, 60, 52, 0.9)), url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80');">
+        </div>
+        <div class="hero-content" style="color: white;">
+            <h1>Community Spotlight</h1>
+            <p>Celebrating our neighbors and local achievements.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-wrapper" style="max-width: 800px; margin: 0 auto; padding: 4rem 0;">
+
+                <div class="spotlight-article" style="margin-bottom: 4rem;">
+                    <h2>Resident of the Month: Sarah Jenkins</h2>
+                    <p style="font-style: italic; color: white;">Organizing the annual food drive for 5 years
+                        running.
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80"
+                        alt="Resident" style="width: 100%; border-radius: 8px; margin: 1rem 0;">
+                    <p>Sarah has been a pillar of the Brookhaven community, dedicating countless hours to ensuring our
+                        local food pantry is stocked. "It's all about giving back," she says. Read more about her
+                        initiatives and how you can help.</p>
+                </div>
+
+                <div class="spotlight-article">
+                    <h2>Business Spotlight: The Morning Brew Cafe</h2>
+                    <p style="font-style: italic; color: #666;">Serving the best coffee in the Village Center.</p>
+                    <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=80"
+                        alt="Cafe" style="width: 100%; border-radius: 8px; margin: 1rem 0;">
+                    <p>Owned by residents Mark and Lisa, The Morning Brew has become the go-to gathering spot for
+                        neighbors. Don't miss their Saturday morning pastry specials!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="community-directory.html">Directory</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="index.html#contribute">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

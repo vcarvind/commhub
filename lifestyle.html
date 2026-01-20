@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle - Brookhaven Community Hub</title>
+    <meta name="description"
+        content="Experience the vibrant lifestyle at Brookhaven with events, clubs, and community gatherings.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-mini {
+            height: 50vh;
+            min-height: 400px;
+        }
+
+        .event-card {
+            display: flex;
+            background: #fff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 2rem;
+            border: 1px solid var(--color-border);
+        }
+
+        .event-date {
+            background-color: var(--color-primary);
+            color: #fff;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .event-date .day {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .event-date .month {
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .event-details {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .event-details h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .event-meta {
+            color: var(--color-text-muted);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .club-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .club-card {
+            text-align: center;
+            padding: 2rem;
+            background: #fff;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            transition: var(--transition);
+        }
+
+        .club-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-accent);
+        }
+
+        .club-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            height: 200px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .event-card {
+                flex-direction: column;
+            }
+
+            .event-date {
+                flex-direction: row;
+                gap: 0.5rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">Brookhaven<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html" class="active" style="color: var(--color-accent);">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-mini">
+        <div class="hero-bg"
+            style="background: linear-gradient(rgba(26, 60, 52, 0.5), rgba(26, 60, 52, 0.8)), url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop');">
+        </div>
+        <div class="hero-content">
+            <h1 class="fade-in">A Vibrant Community</h1>
+            <p class="fade-in delay-1">Connect, celebrate, and create memories with your neighbors.</p>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <p>Don't miss out on what's happening</p>
+            </div>
+
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">12</span>
+                    <span class="month">Oct</span>
+                </div>
+                <div class="event-details">
+                    <h3>Fall Festival & Market</h3>
+                    <div class="event-meta">
+                        <span>📍 Central Park Pavilion</span>
+                        <span>⏰ 10:00 AM - 4:00 PM</span>
+                    </div>
+                    <p>Join us for our biggest event of the year! Local vendors, food trucks, pumpkin patch, and live
+                        music for the whole family.</p>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">24</span>
+                    <span class="month">Oct</span>
+                </div>
+                <div class="event-details">
+                    <h3>New Resident Orientation</h3>
+                    <div class="event-meta">
+                        <span>📍 Clubhouse Meeting Room</span>
+                        <span>⏰ 6:30 PM - 8:00 PM</span>
+                    </div>
+                    <p>New to Brookhaven? Come meet the HOA board, learn about the amenities, and meet other newcomers.
+                        Snacks provided.</p>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">31</span>
+                    <span class="month">Oct</span>
+                </div>
+                <div class="event-details">
+                    <h3>Halloween Trunk-or-Treat</h3>
+                    <div class="event-meta">
+                        <span>📍 Recreation Center Parking Lot</span>
+                        <span>⏰ 5:00 PM - 7:00 PM</span>
+                    </div>
+                    <p>Safe trick-or-treating fun! Decorate your car trunk and bring candy to share. Prizes for best
+                        decorations.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#" class="btn-primary">View Full Calendar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubs & Groups -->
+    <section id="clubs" style="background-color: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Clubs & Organizations</h2>
+                <p>Find your tribe and pursue your passions</p>
+            </div>
+
+            <div class="club-grid">
+                <div class="club-card">
+                    <span class="club-icon">📚</span>
+                    <h3>Book Club</h3>
+                    <p>Meets monthly to discuss selected novels. Open to all reading levels.</p>
+                </div>
+                <div class="club-card">
+                    <span class="club-icon">🌱</span>
+                    <h3>Garden Club</h3>
+                    <p>Share tips, swap seeds, and help maintain the community butterfly garden.</p>
+                </div>
+                <div class="club-card">
+                    <span class="club-icon">♟️</span>
+                    <h3>Board Game Night</h3>
+                    <p>Weekly gatherings for strategy and family-friendly board games.</p>
+                </div>
+                <div class="club-card">
+                    <span class="club-icon">🍷</span>
+                    <h3>Wine Enthusiasts</h3>
+                    <p>Monthly tastings and social mixers. 21+ residents only.</p>
+                </div>
+                <div class="club-card">
+                    <span class="club-icon">🏃</span>
+                    <h3>Running Club</h3>
+                    <p>Morning group runs on the trails. All paces welcome.</p>
+                </div>
+                <div class="club-card">
+                    <span class="club-icon">🧶</span>
+                    <h3>Crafters Circle</h3>
+                    <p>Bring your knitting, sewing, or crafting projects and chat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community Moments</h2>
+                <p>Snapshots from recent gatherings</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80"
+                        alt="Community Gathering">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80"
+                        alt="Party">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1464349173617-89eff85ed8a1?auto=format&fit=crop&q=80"
+                        alt="Outdoors">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de3c9a59af38?auto=format&fit=crop&q=80"
+                        alt="Celebration">
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#" class="btn-outline"
+                    style="color: var(--color-primary); border-color: var(--color-primary);">View All Photos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#directory">Directory</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="index.html#contribute">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Directory - Brookhaven Community Hub</title>
+    <meta name="description" content="Find local businesses and essential contacts in Brookhaven.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dark Theme Styles */
+        body {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        li,
+        span {
+            color: white;
+        }
+
+        /* Header Override */
+        #header {
+            background-color: rgba(26, 60, 52, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo,
+        #header nav a {
+            color: white;
+        }
+
+        /* Dropdown Override */
+        .dropdown-menu {
+            background-color: #224a40;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a {
+            color: white !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--color-accent) !important;
+        }
+
+        /* Directory Layout */
+        .directory-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Search & Filter Styles (if added later) */
+        .directory-controls {
+            margin-bottom: 2rem;
+        }
+
+        /* Card Styles - Dark Glassmorphism */
+        .directory-card {
+            background: rgba(255, 255, 255, 0.05);
+            /* Semi-transparent dark */
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .directory-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-color: var(--color-accent);
+        }
+
+        .directory-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--color-accent);
+            /* Gold for titles */
+        }
+
+        .directory-card p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.5rem;
+        }
+
+        .directory-card a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .directory-card a:hover {
+            border-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">Brookhaven<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory" class="active" style="color: var(--color-accent);">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-mini">
+        <div class="hero-bg"
+            style="background: linear-gradient(rgba(26, 60, 52, 0.6), rgba(26, 60, 52, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80');">
+        </div>
+        <div class="hero-content">
+            <h1>Business Directory</h1>
+            <p>Support local: Find services within our community.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-wrapper" style="padding: 4rem 0;">
+
+                <h2 style="margin-bottom: 2rem;">Essential Numbers</h2>
+                <div class="directory-list" style="margin-bottom: 4rem;">
+                    <div class="directory-card">
+                        <h3>Association Office</h3>
+                        <p>General Inquiries</p>
+                        <a href="tel:5551234567">(555) 123-4567</a>
+                    </div>
+                    <div class="directory-card">
+                        <h3>Security Dispatch</h3>
+                        <p>Non-Emergency</p>
+                        <a href="tel:5559876543">(555) 987-6543</a>
+                    </div>
+                    <div class="directory-card">
+                        <h3>Trash Collection</h3>
+                        <p>Best Waste Solutions</p>
+                        <a href="tel:5555555555">(555) 555-5555</a>
+                    </div>
+                </div>
+
+                <h2 style="margin-bottom: 2rem;">Local Businesses</h2>
+                <div class="directory-list">
+                    <div class="directory-card">
+                        <h3>Brookhaven Plumbing</h3>
+                        <p>Residential Services</p>
+                        <a href="#">View Website</a>
+                    </div>
+                    <div class="directory-card">
+                        <h3>Elite Landscaping</h3>
+                        <p>Lawn & Garden Care</p>
+                        <a href="#">View Website</a>
+                    </div>
+                    <div class="directory-card">
+                        <h3>The Morning Brew</h3>
+                        <p>Coffee & Pastries</p>
+                        <a href="#">View Website</a>
+                    </div>
+                    <div class="directory-card">
+                        <h3>Tech Wizard</h3>
+                        <p>Computer Repair</p>
+                        <a href="#">View Website</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="community-directory.html">Directory</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="index.html#contribute">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinco Ranch Community Hub</title>
-    <meta name="description" content="A comprehensive resource hub for Cinco Ranch residents, featuring local services, parks, and events.">
-    
+    <title>Brookhaven Community Hub</title>
+    <meta name="description"
+        content="A comprehensive resource hub for Brookhaven residents, featuring local services, parks, and events.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Header -->
     <header id="header">
         <div class="container">
-            <a href="#" class="logo">Cinco<span class="accent">Hub</span></a>
+            <a href="#" class="logo">Brookhaven<span class="accent">Hub</span></a>
             <nav>
                 <ul>
-                    <li><a href="#highlights">Highlights</a></li>
-                    <li><a href="#directory">Directory</a></li>
-                    <li><a href="#contribute" class="btn-primary">Add Resource</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,8 +71,9 @@
         <div class="hero-bg" style="background-image: url('images/hero.png');"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="fade-in">Cinco Ranch<br>Community Experience</h1>
-            <p class="fade-in delay-1">Discover, connect, and engage with the best resources available to our residents.</p>
+            <h1 class="fade-in">Brookhaven<br>Community Experience</h1>
+            <p class="fade-in delay-1">Discover, connect, and engage with the best resources available to our residents.
+            </p>
             <div class="hero-actions fade-in delay-2">
                 <a href="#directory" class="btn-outline">Explore Directory</a>
             </div>
@@ -68,7 +106,11 @@
 
             <div class="directory-controls">
                 <div class="search-box">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
                     <input type="text" id="search-input" placeholder="Search for parks, services, events...">
                 </div>
                 <div class="filter-pills" id="filter-container">
@@ -80,7 +122,7 @@
             <div class="resource-grid" id="resource-container">
                 <!-- Javascript will populate this -->
             </div>
-            
+
             <div class="no-results hidden" id="no-results">
                 <p>No resources found matching your search.</p>
             </div>
@@ -98,9 +140,9 @@
                 <form id="add-resource-form">
                     <div class="form-group">
                         <label for="res-name">Resource Name</label>
-                        <input type="text" id="res-name" required placeholder="e.g. Cinco Ranch Library">
+                        <input type="text" id="res-name" required placeholder="e.g. Brookhaven Library">
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="res-category">Category</label>
@@ -122,7 +164,8 @@
 
                     <div class="form-group">
                         <label for="res-desc">Description</label>
-                        <textarea id="res-desc" rows="4" placeholder="Briefly describe the services or offerings..."></textarea>
+                        <textarea id="res-desc" rows="4"
+                            placeholder="Briefly describe the services or offerings..."></textarea>
                     </div>
 
                     <button type="submit" class="btn-primary full-width">Submit Resource</button>
@@ -136,7 +179,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>Cinco<span class="accent">Hub</span></h3>
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
                     <p>Connecting the community,<br>one resource at a time.</p>
                 </div>
                 <div class="footer-links">
@@ -148,8 +191,9 @@
                     </ul>
                 </div>
                 <div class="footer-legal">
-                    <p>&copy; 2026 Cinco Ranch Community Hub. All rights reserved.</p>
-                    <p class="disclaimer">Not officially affiliated with Cinco Ranch Residential Association II. Educational Project.</p>
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                    <p class="disclaimer">Not officially affiliated with Brookhaven Residential Association. Educational
+                        Project.</p>
                 </div>
             </div>
         </div>
@@ -157,4 +201,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

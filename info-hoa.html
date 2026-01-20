@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOA Documents - Brookhaven Community Hub</title>
+    <meta name="description" content="Access crucial HOA documents including By-Laws, Covenants, and Meeting Minutes.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dark Theme Styles */
+        body {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        li,
+        span,
+        strong {
+            color: white;
+        }
+
+        /* Header Override */
+        #header {
+            background-color: rgba(26, 60, 52, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo,
+        #header nav a {
+            color: white;
+        }
+
+        /* Dropdown Override */
+        .dropdown-menu {
+            background-color: #224a40;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a {
+            color: white !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--color-accent) !important;
+        }
+
+        /* Document Item Override */
+        .document-item {
+            background: rgba(255, 255, 255, 0.05) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: white !important;
+        }
+
+        .document-item p {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">Brookhaven<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html" class="active" style="color: var(--color-accent);">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-mini">
+        <div class="hero-bg"
+            style="background: linear-gradient(rgba(26, 60, 52, 0.6), rgba(26, 60, 52, 0.9)), url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80');">
+        </div>
+        <div class="hero-content">
+            <h1>HOA Documents</h1>
+            <p>Transparency and governance for our community.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-wrapper" style="max-width: 800px; margin: 0 auto; padding: 4rem 0;">
+                <h2>Governing Documents</h2>
+                <p>Access the official documents that govern the Brookhaven Community Association. These resources are
+                    essential for understanding your rights and responsibilities as a resident.</p>
+
+                <h3 style="margin-top: 2rem;">Available Downloads</h3>
+                <ul class="document-list" style="list-style: none; padding: 0;">
+                    <li class="document-item"
+                        style="padding: 1rem; margin-bottom: 1rem; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+                        <div>
+                            <strong>By-Laws</strong>
+                            <p style="margin: 0; font-size: 0.9rem;">Rules adopting the specific procedures
+                                for the administration of the Association.</p>
+                        </div>
+                        <button class="btn-secondary" style="font-size: 0.8rem;">Download PDF</button>
+                    </li>
+                    <li class="document-item"
+                        style="padding: 1rem; margin-bottom: 1rem; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+                        <div>
+                            <strong>Articles of Incorporation</strong>
+                            <p style="margin: 0; font-size: 0.9rem;">The legal charter establishing the
+                                Association as a corporation.</p>
+                        </div>
+                        <button class="btn-secondary" style="font-size: 0.8rem;">Download PDF</button>
+                    </li>
+                    <li class="document-item"
+                        style="padding: 1rem; margin-bottom: 1rem; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+                        <div>
+                            <strong>Covenants, Conditions & Restrictions (CC&Rs)</strong>
+                            <p style="margin: 0; font-size: 0.9rem;">Detailed restrictions on the use and
+                                enjoyment of the property.</p>
+                        </div>
+                        <button class="btn-secondary" style="font-size: 0.8rem;">Download PDF</button>
+                    </li>
+                </ul>
+
+                <h3 style="margin-top: 2rem;">Forms & Applications</h3>
+                <p>Find standard forms for facility use, committee applications, and more in our <a
+                        href="info-home-improvement.html"
+                        style="color: var(--color-accent); text-decoration: underline;">Home Improvement</a> section for
+                    architectural modifications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="community-directory.html">Directory</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="index.html#contribute">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
