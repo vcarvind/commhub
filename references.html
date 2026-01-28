@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information - Brookhaven Community Hub</title>
+    <meta name="description"
+        content="Essential community information, HOA documents, MUD districts, and resident resources.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-mini {
+            height: 50vh;
+            min-height: 400px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: var(--color-white);
+            padding: 2.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            transition: var(--transition);
+        }
+
+        .info-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-primary-light);
+            transform: translateY(-5px);
+        }
+
+        .info-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .info-card ul {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .info-card li {
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid var(--color-bg-secondary);
+        }
+
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+
+        .info-card a {
+            color: var(--color-text-main);
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info-card a:hover {
+            color: var(--color-accent);
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-bg-secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">Brookhaven<span class="accent">Hub</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#directory">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="community-spotlights.html">Spotlights</a></li>
+                            <li><a href="community-directory.html">Directory</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="amenities.html">Amenities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html">All Amenities</a></li>
+                            <li><a href="amenities-pools.html">Pools</a></li>
+                            <li><a href="amenities-tennis.html">Tennis & Pickleball</a></li>
+                            <li><a href="amenities-parks.html">Parks & Trails</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="information.html" class="active" style="color: var(--color-accent);">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info-hoa.html">HOA Documents</a></li>
+                            <li><a href="info-home-improvement.html">Home Improvement</a></li>
+                            <li><a href="info-mud.html">MUD Districts</a></li>
+                            <li><a href="info-lost-found.html">Lost & Found</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="lifestyle.html">Lifestyle</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lifestyle-events.html">Upcoming Events</a></li>
+                            <li><a href="lifestyle-clubs.html">Clubs & Groups</a></li>
+                            <li><a href="lifestyle-gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>                  
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-mini">
+        <div class="hero-bg"
+            style="background: linear-gradient(rgba(26, 60, 52, 0.7), rgba(26, 60, 52, 0.9)), url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop');">
+        </div>
+        <div class="hero-content">
+            <h1 class="fade-in">Resident Information</h1>
+            <p class="fade-in delay-1">Documents, guidelines, and essential resources for homeowners.</p>
+        </div>
+    </section>
+
+    <!-- Information Sections -->
+    <section id="info-content">
+        <div class="container">
+            <div class="info-grid">
+
+                <!-- Association Documents -->
+                <div class="info-card">
+                    <h3>
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        HOA Documents
+                    </h3>
+                    <ul>
+                        <li><a href="info-hoa.html">Governing Documents (CC&Rs) <span>&rarr;</span></a></li>
+                        <li><a href="info-hoa.html">Bylaws & Articles <span>&rarr;</span></a></li>
+                        <li><a href="info-hoa.html">Meeting Minutes <span>&rarr;</span></a></li>
+                        <li><a href="info-hoa.html">Financial Reports <span>&rarr;</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Architectural Review -->
+                <div class="info-card">
+                    <h3>
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21h18" />
+                                <path d="M5 21V7l8-4 8 4v14" />
+                                <path d="M9 10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2" />
+                            </svg>
+                        </div>
+                        Home Improvements
+                    </h3>
+                    <ul>
+                        <li><a href="info-home-improvement.html">Modification Guidelines <span>&rarr;</span></a></li>
+                        <li><a href="info-home-improvement.html">ACC Application Form <span>&rarr;</span></a></li>
+                        <li><a href="info-home-improvement.html">Paint Color Palette <span>&rarr;</span></a></li>
+                        <li><a href="info-home-improvement.html">Fence & Roof Standards <span>&rarr;</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Utility Districts -->
+                <div class="info-card">
+                    <h3>
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                            </svg>
+                        </div>
+                        MUD Districts
+                    </h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Information regarding your local
+                        Municipal Utility District services and tax info.</p>
+                    <ul>
+                        <li><a href="info-mud.html">Find Your District <span>&rarr;</span></a></li>
+                        <li><a href="info-mud.html">Water Quality Reports <span>&rarr;</span></a></li>
+                        <li><a href="info-mud.html">Tax Information <span>&rarr;</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- New Resident Info -->
+                <div class="info-card">
+                    <h3>
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        New Residents & Buyers
+                    </h3>
+                    <ul>
+                        <li><a href="#">Welcome Packet <span>&rarr;</span></a></li>
+                        <li><a href="#">Amenity Access Cards <span>&rarr;</span></a></li>
+                        <li><a href="#">Gate Access Setup <span>&rarr;</span></a></li>
+                        <li><a href="#">Utility Setup Guide <span>&rarr;</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- FAQs -->
+                <div class="info-card">
+                    <h3>
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        Common Questions
+                    </h3>
+                    <ul>
+                        <li><a href="#">Trash Pickup Schedule <span>&rarr;</span></a></li>
+                        <li><a href="#">Street Parking Rules <span>&rarr;</span></a></li>
+                        <li><a href="#">Pet Guidelines <span>&rarr;</span></a></li>
+                        <li><a href="#">Reporting Violations <span>&rarr;</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Lost & Found -->
+                <div class="info-card">
+                    <h3>
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+                        Lost & Found
+                    </h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Community-led board for reporting
+                        lost pets or items.</p>
+                    <ul>
+                        <li><a href="info-lost-found.html">View Recent Listings <span>&rarr;</span></a></li>
+                        <li><a href="info-lost-found.html">Report Lost Item <span>&rarr;</span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Brookhaven<span class="accent">Hub</span></h3>
+                    <p>Connecting the community,<br>one resource at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#directory">Directory</a></li>
+                        <li><a href="information.html">Information</a></li>
+                        <li><a href="index.html#contribute">Contribute</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Brookhaven Community Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
+
+
