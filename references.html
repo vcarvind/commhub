@@ -28,6 +28,12 @@
             gap: 2rem;
         }
 
+        .info-gridlarge {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+            gap: 2rem;
+        }
+        
         .info-card {
             background: var(--color-white);
             padding: 2.5rem;
@@ -174,7 +180,8 @@
                         This project does not use any copyrighted material.
                     </ul>
                 </div>
-
+            </div>
+            <div class="info-gridlarge">
                 <!-- Image Links -->
                 <div class="info-card">
                     <h3>Image Links</h3>
